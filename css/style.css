@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Todo Navbar */
+
+.img{
+    height: 100vh;
+    filter: brightness(60%);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.img img{
+    width: 100%;
+    margin-top: -50px;
+}
+
+.container{
+    height: 100vh;
+}
+
+.navbar{
+    height: 12vh;
+    position: fixed;
+    display: flex;
+    transition: 1s;
+    z-index: 2;
+}
+
+.navbar.scrolling-active{
+    transition: 1s;
+    background-color: rgb(9, 21, 58);
+}
+
+.navbar .logo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 50%;
+}
+
+.navbar .links{
+    width: 75%;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul li{
+    list-style: none;    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a:hover{
+    color: rgb(199, 199, 199);
+}
+
+.hero{
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-dalam{
+    margin-top: 50px;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.hero p{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.hero button{
+    border-radius: 5px;
+    border: solid #fff;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, .24);
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.hero button:hover{
+    background-color: #0e7991bb;
+}
+
+.hero button:active{
+    background: #00000046;
+    box-shadow: 3px 3px 10px #666;
+}
+/* Todo End Navbar */
+
+/* Todo Main 2 */
+.container2{
+    padding-top: 90px;
+}
+
+.container2 h1{
+    margin-left: 90px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.card iframe{
+    width: 1080px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.card h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+/* Todo End Main 2 */
+
+/* Todo Main 3 */
+.container3{
+    padding-top: 90px;
+}
+
+.container3 h1{
+    margin-left: 90px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.card-atas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card1{
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card1 h5{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.card1 img{
+    height: 270px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+.title1{
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card1:hover .title1{
+    display: none;
+}
+
+.title1 h5{
+    text-shadow: 2px 2px 3px black;
+}
+
+.title2{
+    display: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.title2 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card1:hover .title2{
+    display: flex;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.container2 hr{
+    margin-top: 20px;
+}
+
+/* Todo End Main 3 */
+
+/* Todo Main 4 */
+.container4{
+    padding-top: 90px;
+}
+
+.container4 h1{
+    margin-left: 90px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.main3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-up{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container4 hr{
+    margin-top: 20px;
+}
+/* Todo End Main 4 */
+
+/* Todo Main 5 */
+.container5{
+    padding-top: 90px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.container5 h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.video{
+    width: 40%;
+}
+
+.video iframe{
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.topik-kanan{
+    background-color: rgb(235, 235, 235);
+    height: 460px;
+    width: 30%;
+    margin-top: 75px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.topik-kanan p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.container5 hr{
+    margin-top: 20px;
+}
+
+/* Todo End Main 5 */
+
+/* Todo Main 6 */
+.container6{
+    padding-top: 90px;
+}
+
+.container6 h1{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.visa{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 70px;
+}
+
+.visa img{
+    border-radius: 10px;
+}
+
+.visa p{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.section1 img, .section2 img, .section3 img{    
+    width: 330px;
+}
+
+.section1, .section2, .section3{
+    width: 30%;
+    cursor: pointer;
+}
+/* Todo End Main 6 */
+
+/* Todo Footer */
+.footer{
+    background-color: #091426;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.footer-atas{
+    width: 90%;
+    display: flex;
+    margin: 50px auto;
+}
+
+.atas-kiri{
+    width: 30%;
+    align-items: center;
+}
+
+.atas-kiri img{
+    height: 120px;
+    padding-left: 40px;
+}
+
+.logo-footer{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.atas-kanan{
+    width: 70%;
+    text-align: right;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.atas-kanan h1{
+    margin-bottom: 20px;
+}
+
+.footer-bawah{
+    width: 65%;
+    margin: 50px auto 0;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.fa{
+    padding: 10px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 5px;
+}
+
+.fa-facebook{
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.fa-twitter{
+    background-color: #55acee;
+    color: #fff;
+}
+
+.fa-google{
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+.fa-instagram{
+    background-color: #125688;
+    color: #fff;
+}
+
+
+
+
+/* Todo End Footer */
